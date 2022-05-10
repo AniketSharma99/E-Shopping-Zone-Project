@@ -1,0 +1,181 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+
+.row {
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+
+}
+
+.col {
+    padding: 20px 10px;
+    padding-inline-end: 3px;
+    padding-inline-start: 5px;
+    width: 95%;
+    padding: 20px;
+    border: 3px solid transparent;
+    /* border:3px solid rgba(0,0,0,.2)!important; */
+    margin: 20px 0;
+    /* background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%); */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.card-body {
+    /* flex: 1 1 auto; */
+    padding: 1rem 1rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background: #F1F1F1; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col:hover {
+    border: 3px solid rgb(15, 15, 15);
+    border-radius: 18px;
+
+
+
+}
+
+.cat-img {
+    /* Css For image*/
+    border-bottom: 5px solid black;
+    border-radius: auto;
+    height: 300px;
+    width: 255px;
+    background-color: rgb(112, 118, 120);
+
+
+
+}
+
+a {
+    /* Css For header names like home,car,sign in...*/
+
+
+    font-weight: lighter;
+    font-weight: 1000;
+    font-size: 17px;
+    /* font-family: 'Rubik', sans-serif; */
+    color: #e5f0f0;
+
+}
+
+/* ul{
+    list-style: none;
+} */
+
+/* discription,price  */
+b,
+p {
+    color: rgb(12, 12, 12);
+    font-weight: bolder;
+    text-align: left;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+
+
+
+}
+
+/* product name  */
+h4 {
+    color: rgb(8, 8, 8);
+    background-color: #FFCA52;
+    font-weight: normal;
+    text-align: left;
+    font-weight: bolder;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+
+
+}
+p{
+    color: rgb(16, 55, 230);
+}
+
+b{
+    color:red;
+
+}
+
+
+/* For title bar nav bar  */
+/* navbar background color */
+nav {
+    background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: auto;
+    padding: 0;
+}
+
+.navbar-brand {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+}
+
+.navbar-nav-scroll ul li {
+    color: #286B68 !important;
+    border: 2px solid transparent;
+    padding: 15px;
+}
+
+.navbar-nav-scroll ul li:hover {
+    border: 2px solid black;
+    background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+    border-radius: 8px;
+}
+a i{
+    margin-right: 5px;
+    color: white;
+}
+
+/* .catalog-container{
+    background-image: url("https://auction.cimmra.com/assets/img/banner-1.svg");
+     background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: 60%; 
+    } */
+    .banner-section{
+        margin-top: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-section img{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+            }
+    .buttons-banner{
+        position: absolute;
+        top: 50%;
+        right: 13%;
+    }
+    .buttons-banner button{
+        
+       background: #286B68;
+       border: none;
+        border-radius: 8px;
+        color: white!important;
+    }

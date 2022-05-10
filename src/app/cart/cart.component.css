@@ -1,0 +1,77 @@
+
+nav {
+  background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  height: auto;
+  padding: 0;
+}
+
+.navbar-brand {
+  text-align: center;
+  font-size: 28px;
+  color: black;
+}
+
+.navbar-nav-scroll ul li {
+  color: #286B68 !important;
+  border: 2px solid transparent;
+  padding: 15px;
+  
+}
+
+.navbar-nav-scroll ul li:hover {
+  border: 2px solid black;
+  background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+border-radius: 8px;
+}
+a i{
+  margin-right: 5px;
+  color: white;
+}
+button  i{
+  color: black;
+}
+/* For heading like tolat,quantity */
+th{
+  color: rgb(190, 27, 27);
+  padding-top: 1cm;
+  font-size: 25px;
+  text-decoration: underline;
+
+}
+tr{
+  font-weight: 900;
+  color: rgb(13, 13, 14);
+
+}
+
+h3{
+  color: rgb(241, 9, 9);
+  font-weight: 700;
+  padding-top: 0.5cm;
+  font-size: 18px;
+}
+h1{
+ text-align: center;
+  color: purple;
+  font-weight: 500;
+}
+td{
+  font-size: 18px;
+}
+ 
+a {
+    /* Css For header names like home,car,sign in...*/
+
+
+    font-weight: lighter;
+    font-weight: 1000;
+    font-size: 17px;
+    /* font-family: 'Rubik', sans-serif; */
+    color: #286B68;
+
+}
+.btn-success{
+  width:140px;
+  height: 50px;
+}

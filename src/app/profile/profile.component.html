@@ -1,0 +1,65 @@
+<nav class="navbar navbar-dark  text-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" routerLink=""><i class="fa fa-cart-arrow-down"></i>E-ShoppingZone</a>
+      <div class="navbar-nav-scroll">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a class="nav-link" routerLink=""><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/cart" class="nav-link"> <i class="fa fa-shopping-cart"></i> Cart <span class="badge">{{cartItems}}</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/profile"><i class="fa fa-user-circle-o"></i>{{name}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/logout"><i class="fa fa-sign-out"></i>Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<body>
+<div class="profile-container">
+  <div class="content">
+    <h1><i class="fa fa-id-card"></i>    User Profile</h1>
+    
+    <table class="table">
+        <tr>
+            <b>Name :-</b>
+            <td>{{user.name}}</td>
+        </tr>
+        <tr>
+            <b>Username:-</b>
+            <td>{{user.username}}</td>
+        </tr>
+        <tr>
+            <b>Email :-</b>
+            <td>{{user.email}}</td>
+        </tr>
+        <tr>
+            <b>Number :-</b>
+            <td>{{user.number}}</td>
+        </tr>
+        <tr>
+            <b>Gender :-</b>
+            <td>{{user.gender}}</td>
+        </tr>
+        <tr>
+            <b>Address :-</b>
+            <td>
+                {{user.address.house}},
+                {{user.address.street}},
+                {{user.address.area}},
+                {{user.address.city}},
+                {{user.address.state}},
+                {{user.address.country}}
+            </td>
+        </tr>
+    </table>
+    
+    <h3><button routerLink="/all-orders" class="btn btn-success btn-lg"> My Orders </button></h3>
+    
+    </div>
+</div>
+</body>

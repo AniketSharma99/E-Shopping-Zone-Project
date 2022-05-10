@@ -1,0 +1,90 @@
+/* navbar background color */
+nav {
+  background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  height: auto;
+  padding: 0;
+}
+
+.navbar-brand {
+  text-align: center;
+  font-size: 28px;
+  color: black;
+}
+
+.navbar-nav-scroll ul li {
+  color: #286B68 !important;
+  border: 2px solid transparent;
+  padding: 15px;
+}
+
+.navbar-nav-scroll ul li:hover {
+  border: 2px solid black;
+  background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+border-radius: 8px;
+}
+a {
+  /* Css For header names like home,car,sign in...*/
+
+
+  font-weight: lighter;
+  font-weight: 1000;
+  font-size: 17px;
+  /* font-family: 'Rubik', sans-serif; */
+  color: #286B68;
+
+}
+
+
+
+
+img{
+  padding-top: 3cm;
+  border-bottom: 5px solid black;
+  /* width: 90%;
+  height: 90%; */
+}
+h2{
+  padding-top: 4cm;
+  color: rgb(4, 0, 5);
+  font-weight: 600;
+  font-size: 30px;
+}
+h4{
+  color: rgb(235, 41, 28);
+  font-weight: 600;
+  font-size: 20px;
+}
+p{
+  color: rgb(17, 17, 17);
+  font-weight: 600;
+}
+h4.strong{
+  color: rgb(220, 20, 20);
+  
+}
+a{  /* Css For header names like home,car,sign in...*/
+
+    
+  font-weight:lighter;
+ font-weight: 1000;
+ font-size: 17px;
+ 
+}
+strong{
+  text-decoration:underline;
+  font-weight: 800;
+}
+
+.content .row .btn-success {
+  background:rgb(3, 123, 244);
+}
+
+p{
+  color: blue;
+  font-size: 16px;
+}
+.content .row .btn-warning{
+  height: 60px;
+  width: 220px;
+}

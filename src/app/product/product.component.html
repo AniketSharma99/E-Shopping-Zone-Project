@@ -1,0 +1,44 @@
+<nav class="navbar navbar-dark  text-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" routerLink=""><i class="fa fa-cart-arrow-down"></i> E-ShoppingZone</a>
+      <div class="navbar-nav-scroll">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink=""> <i class="fa fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/cart" class="nav-link"> <i class="fa fa-shopping-cart"></i> Cart <span class="badge">{{cartItems}}</span></a>
+          </li>
+          <li *ngIf="isLoggedIn" class="nav-item">
+            <a class="nav-link" routerLink="/profile"><i class="fa fa-user-circle-o"></i>{{name}}</a>
+          </li>
+          <li *ngIf="!isLoggedIn" class="nav-item">
+            <a class="nav-link" routerLink="/login"><i class="fa fa-sign-in"></i>Log in</a>
+          </li>
+          <li *ngIf="isLoggedIn" class="nav-item">
+            <a class="nav-link" routerLink="/logout"><i class="fa fa-sign-out"></i>Logout</a>
+          </li>
+          <li *ngIf="!isLoggedIn" class="nav-item">
+            <a class="nav-link" routerLink="/register"><i class="fa fa-address-card-o"></i>Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<div class="content">
+<div class="row">
+    <div class="col-5 text-center">
+        <img src="{{product.image}}" height="300px"><br><br>
+        <button class="btn btn-warning" (click)="addToCart()">
+          <i class="fa fa-shopping-cart"></i> Add To Cart</button>
+        <!-- <input type="button" class="btn btn-success" value="Buy Now"> -->
+    </div>
+    <div class="col-4" >
+        <h2>{{product.name}}</h2>
+        <h4><strong>Price:-</strong> ₹ {{product.price}} </h4>
+        <p><strong>Description:</strong> {{product.description}}</p>
+
+    </div>
+</div>
+</div>

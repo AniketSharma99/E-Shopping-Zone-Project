@@ -1,0 +1,88 @@
+/* For title bar nav bar  */
+/* navbar background color */
+nav {
+    background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: auto;
+    padding: 0;
+}
+
+.navbar-brand {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+}
+
+.navbar-nav-scroll ul li {
+    color: #286B68 !important;
+    border: 2px solid transparent;
+    padding: 15px;
+}
+
+.navbar-nav-scroll ul li:hover {
+    border: 2px solid black;
+    background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+border-radius: 8px;
+}
+a i{
+    margin-right: 5px;
+    color: white;
+}
+a {
+    /* Css For header names like home,car,sign in...*/
+
+
+    font-weight: lighter;
+    font-weight: 1000;
+    font-size: 17px;
+    /* font-family: 'Rubik', sans-serif; */
+    color: #286B68;
+
+}
+/* form starts */
+.col-5{
+   margin-top: 30px;
+    width: 450px;
+    background: linear-gradient(231.31deg,#286b68 8.73%,#05100f 85.72%);
+    border-radius: 8px;
+    padding: 10px;
+}
+.col-5 h1{
+    color: white;
+    text-align: center;
+font-weight: 600;
+margin-top: 20px;
+}
+
+.col-5 label{
+    
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 8px 0;
+
+}
+.col-5 input{
+    background: #fff;
+    border: 1px solid #286b68;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 45px;
+    margin: 0 0 15px;
+    padding: 0 20px;
+    width: 100%;
+}
+.col-5 .form-group button{
+    background-color: gray;
+    margin-top: 10px;
+ 
+ 
+
+}
+
+.content{
+    padding: 20px;
+}

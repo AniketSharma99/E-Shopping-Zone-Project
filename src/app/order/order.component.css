@@ -1,0 +1,56 @@
+a {
+  /* Css For header names like home,car,sign in...*/
+
+
+  font-weight: lighter;
+  font-weight: 1000;
+  font-size: 17px;
+  /* font-family: 'Rubik', sans-serif; */
+  color: #286B68;
+
+}
+/* For title bar nav bar  */
+/* navbar background color */
+nav {
+  background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  height: auto;
+  padding: 0;
+}
+
+.navbar-brand {
+  text-align: center;
+  font-size: 28px;
+  color: black;
+}
+
+.navbar-nav-scroll ul li {
+  color: #286B68 !important;
+  border: 2px solid transparent;
+  padding: 15px;
+}
+
+.navbar-nav-scroll ul li:hover {
+  border: 2px solid black;
+  background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+border-radius: 8px;
+}
+a i{
+  margin-right: 5px;
+  color: white;
+}
+h3{
+  padding-left: 15cm;
+  padding-bottom: 2cm;
+}
+th{
+  color: rgb(236, 13, 80);
+}
+strong{
+  color: rgb(236, 13, 80);
+  padding-left: 3cm;
+}
+td{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+}

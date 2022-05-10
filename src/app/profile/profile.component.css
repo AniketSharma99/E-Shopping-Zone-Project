@@ -1,0 +1,86 @@
+/* For title bar nav bar  */
+/* navbar background color */
+nav {
+    background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: auto;
+    padding: 0;
+}
+
+.navbar-brand {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+}
+
+.navbar-nav-scroll ul li {
+    color: #286B68 !important;
+    border: 2px solid transparent;
+    padding: 15px;
+}
+
+.navbar-nav-scroll ul li:hover {
+    border: 2px solid black;
+    background: linear-gradient(266.37deg, #CE3A9E 14.95%, #E0447B 36.91%, #FF6040 64.38%, #FFCA52 95.49%);
+border-radius: 8px;
+}
+a {
+    /* Css For header names like home,car,sign in...*/
+
+
+    font-weight: lighter;
+    font-weight: 1000;
+    font-size: 17px;
+    /* font-family: 'Rubik', sans-serif; */
+    color: #286B68;
+
+}
+a i{
+    margin-right: 5px;
+    color: white;
+}
+h1{
+   text-align: center;
+    color: rgb(4, 88, 22);
+    padding-bottom: 30px;
+font-family: Arial, Helvetica, sans-serif;
+  text-decoration:underline;
+  font-weight: bolder;
+  font-size: 45px;
+}
+table{
+    padding-top: 10cm;
+}
+td{
+    font-weight: 400;
+    color: rgb(13, 13, 143);
+    padding-right: 7cm;
+    padding-bottom: 0.5cm;
+    text-align: left;
+    font-size: 19px;
+   
+}
+b{
+    color: black;
+    font-weight: 600;
+    text-align: right;
+    padding-left: 12cm;
+    font-size: 21px;
+   
+}
+tr{
+    padding-top: 3cm;
+}
+h3{
+   padding-left: 25cm;
+  align-self: center;
+
+}
+
+body{
+    padding: 45px;
+}
+/* for the table- content ,bg,padding */
+.content{
+    background: linear-gradient(231.31deg,#daf772 8.73%,#5fc167 85.72%); 
+}
