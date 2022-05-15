@@ -9,7 +9,7 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
+  public admin=false;
   public userId= -1;
   public user: any;
   public name='';
@@ -25,6 +25,10 @@ export class ProfileComponent implements OnInit {
       console.log(this.user);
     });
     this.name=sessionStorage.getItem('name') || '';
+     //Admin logic 
+     if(this.userId==1){
+      this.admin=true;
+    }
     this.cartService.cartItems(this.userId).subscribe(data=> this.cartItems=Number(data));
   }
   

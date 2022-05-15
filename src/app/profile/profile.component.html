@@ -6,11 +6,11 @@
           <li class="nav-item">
             <a class="nav-link" routerLink=""><i class="fa fa-home"></i>Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="!admin">
             <a routerLink="/cart" class="nav-link"> <i class="fa fa-shopping-cart"></i> Cart <span class="badge">{{cartItems}}</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/profile"><i class="fa fa-user-circle-o"></i>{{name}}</a>
+            <a class="nav-link active" routerLink="/profile"><i class="fa fa-user-circle-o"></i>Hi,  {{name}}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/logout"><i class="fa fa-sign-out"></i>Logout</a>
@@ -58,7 +58,7 @@
         </tr>
     </table>
     
-    <h3><button routerLink="/all-orders" class="btn btn-success btn-lg"> My Orders </button></h3>
+    <h3><button routerLink="/all-orders" class="btn btn-success btn-lg" *ngIf ="!admin"> My Orders </button></h3>
     
     </div>
 </div>

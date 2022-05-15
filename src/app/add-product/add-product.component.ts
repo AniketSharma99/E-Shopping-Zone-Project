@@ -10,7 +10,7 @@ import { CatalogService } from '../services/catalog.service';
   styleUrls: ['./add-product.component.css']
 })
 export class AddProductComponent implements OnInit {
-
+  public admin=false;
   userId=-1;
   name='';
   cartItems=0;
@@ -30,6 +30,9 @@ export class AddProductComponent implements OnInit {
   ngOnInit(): void {
     this.name= sessionStorage.getItem('name') || '';
     this.userId=parseInt(sessionStorage.getItem('userId') || '-1');
+    if(this.userId==1){
+      this.admin=true;
+    }
     this.cartService.cartItems(this.userId).subscribe(data=> this.cartItems=Number(data));
   }
 

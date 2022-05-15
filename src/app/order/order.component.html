@@ -27,7 +27,7 @@
     <tr>
         <th></th>
         <th>Item</th>
-        <th>Item Total</th>
+        <th>Item Price</th>
         <th>Quantity</th>
     </tr>
     <tr *ngFor="let item of items">
@@ -37,7 +37,7 @@
         <td>{{item.quantity}}</td>
     </tr>
     <tr>
-        <td><strong>Cost:</strong> {{order.amount}}</td>
+        <td><strong>Total Cost:</strong> {{order.amount}}</td>
         <td><strong>Order Placed On:</strong>{{order.date}}</td>
         <td><strong>Satus:</strong> {{order.status}}</td>
     </tr>

@@ -45,6 +45,8 @@ h3{
 }
 th{
   color: rgb(236, 13, 80);
+  font-size: 25px;
+  text-align: left;
 }
 strong{
   color: rgb(236, 13, 80);
@@ -52,5 +54,6 @@ strong{
 }
 td{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 800;
+  
 }

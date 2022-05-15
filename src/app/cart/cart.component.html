@@ -43,9 +43,23 @@
         <td></td>
         <td></td>
         <h3> Total: ₹ {{cart.total}}</h3>
-        <td><a><button  class="GFG"  class="btn btn-success"(click)="checkOut()">Buynow</button></a></td>
+        <!-- <td><a><button  class="GFG"  class="btn btn-success"(click)="checkOut()">Buynow</button></a></td> -->
         <!-- onclick="window.location.href = 'https://paytm.me/O7-SV7R'"  -->
         <!-- https://paytm.me/O7-SV7R' -->
+        <td>
+          <google-pay-button
+          environment="TEST"
+          buttonType="buy"
+          buttonColor="black"
+          [paymentRequest]="paymentRequest"
+          (loadpaymentdata)="onLoadPaymentData($event)"
+          (error)="onError($event)"
+          [paymentAuthorizedCallback]="onPaymentDataAuthorized"
+          (click)="checkOut()"
+        >
+        </google-pay-button> 
+
+        </td>
       </tr>
 </table>
 <h1 *ngIf="!itemsExist"><p>Opsssss!!!!! <i class="fa fa-frown"></i> </p>

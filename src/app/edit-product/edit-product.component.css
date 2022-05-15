@@ -54,7 +54,8 @@ position: relative;
     .buttons-banner{
         position: absolute;
         top: 50%;
-        right: 13%;
+        right: 13%; 
+        
     }
     .buttons-banner button{
         
@@ -109,4 +110,10 @@ position: relative;
  
  .content{
      padding: 20px;
+ }
+ .btn-warning{
+     margin-left: 2cm;
+ }
+ .btn-dark{
+    margin-left: 2cm;
  }

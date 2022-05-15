@@ -12,7 +12,7 @@
             <a class="nav-link active" routerLink="/Home"><i class="fa fa-home"></i> Home</a>
           </li>
          
-          <li class="nav-item">
+          <li class="nav-item" *ngIf ="!admin">
             <a routerLink="/cart" class="nav-link"><i class="fa  fa-shopping-cart"></i> Cart <span class="badge">{{cartItems}}</span></a>
           </li>
           <li *ngIf="isLoggedIn" class="nav-item">

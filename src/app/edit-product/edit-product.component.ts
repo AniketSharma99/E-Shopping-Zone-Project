@@ -10,7 +10,7 @@ import { CatalogService } from '../services/catalog.service';
   styleUrls: ['./edit-product.component.css']
 })
 export class EditProductComponent implements OnInit {
-
+  admin =false;
   name='';
   categories=["Electronics", "Clothing", "Sports"];
   product: any;
@@ -36,6 +36,11 @@ export class EditProductComponent implements OnInit {
       });
     });
     this.userId=parseInt(sessionStorage.getItem('userId') || '-1');
+     //Admin logic 
+     if(this.userId==1){
+      this.admin=true;
+    }
+    
     this.cartService.cartItems(this.userId).subscribe(data=> this.cartItems=Number(data));
   }
 
