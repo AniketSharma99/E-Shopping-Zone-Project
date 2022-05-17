@@ -34,27 +34,46 @@ export class ProductComponent implements OnInit {
     this.cartService.cartItems(this.userId).subscribe(data=> this.cartItems=Number(data));
   }
 
-  // addToCart(){
-  //   if(this.isLoggedIn)
-  //   this.cartService.addToCart(this.userId, this.product.id).subscribe(data=>{
-  //       this.cartItems++
-  //   });
-  //   else
-  //   this.router.navigate(['login']);
-  // }
+ 
   addToCart(){
+    if(this.isLoggedIn){
+      Swal.fire({
+        title: 'Product Added to Cart!',
+        text: '',
+        icon: 'success',
+        showCancelButton: false,
+        confirmButtonText: 'OK',
+        cancelButtonText: 'Cancel'
+    }).then((result) => {
+      if (result.value) {
+      if(this.isLoggedIn)
+      this.cartService.addToCart(this.userId, this.product.id).subscribe(data=>{
+          this.cartItems++
+      });
+      else
+      this.router.navigate(['login']);
+    }})
+  }else{
     Swal.fire({
-      title: 'Product is added to cart ',
+      title: 'Please Login to proceed!',
       text: '',
-      confirmButtonText: 'Yes',
+      icon: 'error',
+      showCancelButton: false,
+      confirmButtonText: 'OK',
+      cancelButtonText: 'Cancel'
   }).then((result) => {
+    if (result.value) {
     if(this.isLoggedIn)
     this.cartService.addToCart(this.userId, this.product.id).subscribe(data=>{
         this.cartItems++
     });
     else
     this.router.navigate(['login']);
+  }})
+  
   }
-  )}
- 
-}
+  
+  }
+  
+    
+  }

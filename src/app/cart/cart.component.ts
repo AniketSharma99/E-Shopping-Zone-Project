@@ -86,7 +86,7 @@ export class CartComponent implements OnInit {
         amount: this.cart.total,
         items: this.cart.items,
         date: null,
-        status: "Payment Confirmation Pending Form bank"
+        status: "Payment Successfull"
       };
       this.cartService.clearCart(this.userId).subscribe(); // for clear the cart
     this.orderService.checkOut(order).subscribe(data=> this.router.navigate(['/order', '-1']));
