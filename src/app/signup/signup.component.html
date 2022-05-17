@@ -54,15 +54,13 @@
           <input type="text" formControlName="email" class="form-control" [class.is-invalid]="signupForm.controls.email.invalid && signupForm.controls.email.touched">
        
         
-
-       
-        
-          
-       
-        
           <label>Contact Number *</label>
           <input type="number" formControlName="number" class="form-control" [class.is-invalid]="signupForm.controls.number.invalid && signupForm.controls.number.touched">
-       <br>
+          <div *ngIf="signupForm.controls.number.invalid && signupForm.controls.number.touched" class="text-danger">
+            <small *ngIf="signupForm.get('number')!.errors?.required">Please Enter Contact No.</small>
+            <small *ngIf="signupForm.get('number')!.errors?.pattern">Please Enter 10 digit No.</small>
+          </div>      
+          <br>
         
           <label>Gender: </label> 
           <input type="radio" formControlName="gender" id="male" value="Male"><label for="male">Male</label>
