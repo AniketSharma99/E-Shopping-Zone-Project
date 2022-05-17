@@ -52,7 +52,11 @@
           
           <label>Email *</label>
           <input type="text" formControlName="email" class="form-control" [class.is-invalid]="signupForm.controls.email.invalid && signupForm.controls.email.touched">
-       
+          <div *ngIf="signupForm.controls.number.invalid && signupForm.controls.number.touched" class="text-danger">
+            <small *ngIf="signupForm.get('email')!.errors?.required">Please Enter Email</small>
+            <small *ngIf="signupForm.get('email')!.errors?.pattern">Please Enter Valid Email</small>
+          </div>      
+          <br>
         
           <label>Contact Number *</label>
           <input type="number" formControlName="number" class="form-control" [class.is-invalid]="signupForm.controls.number.invalid && signupForm.controls.number.touched">
