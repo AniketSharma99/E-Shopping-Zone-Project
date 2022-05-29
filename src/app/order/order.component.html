@@ -36,10 +36,18 @@
         <td>{{item.price}}</td>
         <td>{{item.quantity}}</td>
     </tr>
+    <br>
     <tr>
+      
         <td><strong>Total Cost:</strong> {{order.amount}}</td>
         <td><strong>Order Placed On:</strong>{{order.date}}</td>
         <td><strong>Satus:</strong> {{order.status}}</td>
+    </tr>
+    <br>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><strong>Bill Receipt:</strong><button onclick="window.print()" style="background:rgb(0, 149, 255); font-weight: 900; ">Download </button></td>
     </tr>
 </table>
 </div>
